@@ -1,0 +1,16 @@
+[project]
+name = "home-assignment"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "apachelogs>=0.6.1,<1",
+    "geoip2>=5.2.0,<6",
+    "pydantic>=2.12.5,<3",
+    "pytest>=9.0.2,<10",
+    "user-agents>=2.2.0,<3",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
