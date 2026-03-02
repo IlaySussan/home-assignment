@@ -1,7 +1,7 @@
 [project]
 name = "home-assignment"
 version = "0.1.0"
-description = "Add your description here"
+description = "Statistical Reporting Module for Apache Log Files"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
