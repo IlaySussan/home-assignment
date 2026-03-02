@@ -3,6 +3,8 @@ from geoip2.errors import AddressNotFoundError
 from user_agents import parse as parse_user_agent
 from models import LogLine
 
+UNKNOWN = "Unknown"
+
 class DataEnrichment:
     """
     Enriches the data object with additional information:
@@ -17,9 +19,9 @@ class DataEnrichment:
         Takes a parsed LogLine, determines Country, Browser, and OS,
         and returns a new enriched LogLine instance.
         """
-        country = "Unknown"
-        browser = "Unknown"
-        os_name = "Unknown"
+        country = UNKNOWN
+        browser = UNKNOWN
+        os_name = UNKNOWN
 
         # Determine Country
         try:
